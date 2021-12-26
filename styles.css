@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.site {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(52, 210, 160);
+  background: linear-gradient(
+    45deg,
+    rgba(52, 210, 160, 1) 0%,
+    rgba(19, 144, 149, 1) 100%
+  );
+}
+
+.BoxForm {
+  width: calc(100% - 40px);
+  max-width: 800px;
+  border-radius: 20px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 100%;
+  overflow: hidden;
+}
+
+.Image {
+  background-image: url(img1.jpg);
+  background-size: cover;
+}
+
+.FormBox {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.TextForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TextForm > h1 {
+  color: #189994;
+  font-size: 35px;
+}
+
+.TextForm > p {
+  font-size: 13px;
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  width: calc(100% - 80px);
+  position: relative;
+}
+
+form > span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+form > input[type="text"],
+form > input[type="email"] {
+  float: right;
+  margin-right: 20px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  border-radius: 4px;
+  height: 28px;
+  transition: 0.3s;
+  padding-left: 10px;
+  border: #ffffff00 2px solid;
+  color: #098682;
+  position: relative;
+  top: -5px;
+}
+
+form > input:focus {
+  outline: none;
+  border: #189994 2px solid;
+  color: #189994;
+  background-color: rgb(255, 255, 255);
+}
+
+form > input::placeholder {
+  transition: 300ms;
+}
+
+form > input:focus::placeholder {
+  color: #189994;
+}
+
+.icons {
+  display: inline;
+}
+
+.icon-box {
+  cursor: pointer;
+  user-select: none;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  top: 67px;
+}
+
+.icon-box2{
+  position: absolute;
+  right: 20px;
+}
+
+.icon-box1{
+  position: absolute;
+  right: 120px;
+}
+
+form ion-icon {
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0ms;
+}
+
+form .icon1 {
+  background-color: #189994;
+}
+
+form .icon2 {
+  background-color: #322b57;
+}
+
+form .icon-box:hover > ion-icon {
+  transition: 500ms;
+  transform: rotateX(360deg);
+}
+
+.test-before-icon {
+  position: relative;
+  top: -10px;
+  right: 5px;
+}
+
+.btns {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.btns > input[type="reset"],
+.btns > input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border: #18999500 2px solid;
+  transition: 300ms;
+  font-size: 13px;
+}
+
+.btns > input[type="submit"] {
+  margin-left: 10px;
+  background-color: #0da1a1;
+}
+
+.btns > input[type="submit"]:hover {
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #189994;
+  border: #189994 2px solid;
+  border-radius: 5px;
+}
+
+.btns > input[type="reset"] {
+  margin-right: 10px;
+  background-color: #322b57;
+}
+
+.btns > input[type="reset"]:hover {
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: #322b57;
+  border: #322b57 2px solid;
+  border-radius: 5px;
+}
