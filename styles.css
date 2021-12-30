@@ -435,12 +435,32 @@ form .icon-box:hover > ion-icon {
     height: 650px;
   }
 
-  .icon-box{
+  .icon-box {
     display: inline;
   }
 
   .icon-box {
     display: inline;
     top: 152px;
+  }
 }
+
+@media screen and (max-width: 310px) {
+  form > input[type="text"],
+  form > input[type="email"] {
+    margin-right: 0px;
+    right: -25px;
+  }
+
+  .icon-box2 {
+    right: -30px;
+  }
+
+  .icon-box1 {
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  
 }
