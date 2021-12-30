@@ -205,11 +205,14 @@ form .icon-box:hover > ion-icon {
 /* +++++++++++       +++++++++++ */
 
 .Image {
-  padding: 10px;
+  padding: 6px;
 }
 
 .Image > nav {
-  height: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Image > nav > .Brand > h5 {
@@ -218,10 +221,39 @@ form .icon-box:hover > ion-icon {
   font-weight: 400;
 }
 
+
+.Image > nav > .BtnMenu{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.Image > nav > .BtnMenu > span{
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: black 1px 1px 5px;
+}
+
+.Image > nav > .BtnMenu > span:nth-child(2){
+  transform: translateY(-6px);
+}
+
+.Image > nav > .BtnMenu > span:nth-child(3){
+  transform: translateY(6px);
+}
+
 .Image > .Intro {
   margin-top: 50%;
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,10 +274,9 @@ form .icon-box:hover > ion-icon {
 
 .Image > .Intro > span:nth-child(3) {
   position: absolute;
-  bottom: 220px;
+  bottom: 230px;
   text-shadow: black 0px 0px 5px;
   color: white;
   font-weight: 300;
   font-size: 14px;
 }
-
