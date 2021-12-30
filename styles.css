@@ -423,3 +423,24 @@ form .icon-box:hover > ion-icon {
     color: white;
   }
 }
+
+@media screen and (max-width: 400px) {
+  form > span {
+    display: block;
+    height: 25px;
+    margin-top: 5px;
+  }
+
+  .BoxForm {
+    height: 650px;
+  }
+
+  .icon-box{
+    display: inline;
+  }
+
+  .icon-box {
+    display: inline;
+    top: 152px;
+}
+}
