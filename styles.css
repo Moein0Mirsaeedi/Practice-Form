@@ -310,7 +310,6 @@ form .icon-box:hover > ion-icon {
 }
 
 .menu-toggle {
-  /* display: none; */
   position: absolute;
   right: 0px;
   top: 35px;
@@ -320,9 +319,6 @@ form .icon-box:hover > ion-icon {
 .menu-toggle ul {
   display: flex;
   justify-content: space-around;
-  transform: translateX(350px);
-  transition: 0.5s;
-  transition-delay: 0.4s;
 }
 
 .menu-toggle ul a {
@@ -334,20 +330,96 @@ form .icon-box:hover > ion-icon {
 .menu-toggle ul a:nth-child(1),
 .menu-toggle ul a:nth-child(3) {
   background-color: #322b57;
+  border: #322b5700 2px solid;
+}
+
+.menu-toggle ul a:nth-child(1):hover,
+.menu-toggle ul a:nth-child(3):hover {
+  background-color: #fff;
+  color: #322b57;
+  border: #322b57 2px solid;
+  border-radius: 5px;
 }
 
 .menu-toggle ul a:nth-child(2) {
   background-color: #189994;
+  border: #18999500 2px solid;
+}
+
+.menu-toggle ul a:nth-child(2):hover {
+  background-color: #fff;
+  color: #189994;
+  border: #189994 2px solid;
+
+  border-radius: 5px;
 }
 
 .menu-toggle ul a {
   color: white;
+  transition: 500ms;
 }
 
-.BtnMenu input:checked ~ .menu-toggle {
-  /* display: block; */
+.menu-toggle ul a:nth-child(1) {
+  transform: translateX(-120px);
 }
 
-.BtnMenu input:checked ~ .menu-toggle ul {
+.menu-toggle ul a:nth-child(2) {
+  transform: translatey(-100px);
+}
+
+.menu-toggle ul a:nth-child(3) {
+  transform: translateX(120px);
+}
+
+.BtnMenu input:checked ~ .menu-toggle ul a:nth-child(1) {
   transform: translateX(0);
+}
+
+.BtnMenu input:checked ~ .menu-toggle ul a:nth-child(2) {
+  transform: translatey(0);
+}
+
+.BtnMenu input:checked ~ .menu-toggle ul a:nth-child(3) {
+  transform: translateX(0);
+}
+
+/* ---------- Media ---------- */
+
+@media screen and (max-width: 700px) {
+  .Image nav {
+    display: none;
+  }
+
+  .Image .Intro {
+    display: none;
+  }
+
+  .BoxForm {
+    grid-template-columns: 100%;
+  }
+
+  .Image {
+    grid-area: 1 / 1 / 1 / 1;
+    filter: blur(4px);
+  }
+
+  .FormBox {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  form > span {
+    color: white;
+  }
+
+  .TextForm > h1 {
+    color: #322b57;
+    font-size: 35px;
+    z-index: 2;
+  }
+
+  .TextForm > p {
+    font-size: 13px;
+    z-index: 2;
+    color: white;
+  }
 }
